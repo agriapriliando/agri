@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" width="800" height="60" preserveAspectRatio="none">
+  <defs>
+    <pattern id="dayakBorderPattern" width="160" height="60" patternUnits="userSpaceOnUse">
+      <!-- Background Band -->
+      <rect width="160" height="60" fill="#072d2d" opacity="0.95"/>
+      <line x1="0" y1="2" x2="160" y2="2" stroke="#f59e0b" stroke-width="2"/>
+      <line x1="0" y1="58" x2="160" y2="58" stroke="#14b8a6" stroke-width="2"/>
+
+      <!-- Small diamond border top and bottom -->
+      <polygon points="10,6 14,10 10,14 6,10" fill="#ef4444"/>
+      <polygon points="30,6 34,10 30,14 26,10" fill="#f59e0b"/>
+      <polygon points="50,6 54,10 50,14 46,10" fill="#14b8a6"/>
+      <polygon points="70,6 74,10 70,14 66,10" fill="#ef4444"/>
+      <polygon points="90,6 94,10 90,14 86,10" fill="#ef4444"/>
+      <polygon points="110,6 114,10 110,14 106,10" fill="#14b8a6"/>
+      <polygon points="130,6 134,10 130,14 126,10" fill="#f59e0b"/>
+      <polygon points="150,6 154,10 150,14 146,10" fill="#ef4444"/>
+
+      <!-- Central Chevron & Dayak Spiral Structure -->
+      <!-- Center Diamond -->
+      <polygon points="80,12 110,30 80,48 50,30" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+      <polygon points="80,18 98,30 80,42 62,30" fill="#dc2626" opacity="0.8"/>
+      <circle cx="80" cy="30" r="4" fill="#fde047"/>
+
+      <!-- Left Dayak Loop -->
+      <path d="M50,30 C35,16 20,24 20,34 C20,44 32,44 36,36 C38,32 34,26 28,28" 
+            fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M50,30 C40,40 28,40 24,35" 
+            fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Right Dayak Loop -->
+      <path d="M110,30 C125,16 140,24 140,34 C140,44 128,44 124,36 C122,32 126,26 132,28" 
+            fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M110,30 C120,40 132,40 136,35" 
+            fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Edge Joint Diamonds -->
+      <polygon points="0,30 10,22 10,38" fill="#ef4444"/>
+      <polygon points="160,30 150,22 150,38" fill="#ef4444"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#dayakBorderPattern)"/>
+</svg>

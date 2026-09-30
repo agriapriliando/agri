@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="bgTosca" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="bgRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Central Trunk (Batang) -->
+  <line x1="150" y1="50" x2="150" y2="400" stroke="url(#bgGold)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Top Finial: Stylized Tingang Bird / Sun Spear -->
+  <polygon points="150,20 165,55 150,45 135,55" fill="url(#bgRed)" stroke="#fde047" stroke-width="2"/>
+  <circle cx="150" cy="65" r="8" fill="url(#bgTosca)" stroke="#f59e0b" stroke-width="2"/>
+
+  <!-- Tier 1 Branches (Top) -->
+  <path d="M150,110 C180,85 220,95 225,125 C228,145 205,155 190,140 C180,130 190,115 200,120" 
+        stroke="url(#bgGold)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M150,110 C120,85 80,95 75,125 C72,145 95,155 110,140 C120,130 110,115 100,120" 
+        stroke="url(#bgGold)" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="215" cy="110" r="5" fill="#ef4444"/>
+  <circle cx="85" cy="110" r="5" fill="#ef4444"/>
+
+  <!-- Tier 2 Branches (Middle - Flourishing) -->
+  <path d="M150,180 C195,150 255,160 260,205 C265,235 230,250 210,230 C195,215 210,190 225,200" 
+        stroke="url(#bgTosca)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M150,180 C105,150 45,160 40,205 C35,235 70,250 90,230 C105,215 90,190 75,200" 
+        stroke="url(#bgTosca)" stroke-width="5" stroke-linecap="round"/>
+  <!-- Secondary sprig -->
+  <path d="M185,185 C220,195 240,220 235,240" stroke="url(#bgRed)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M115,185 C80,195 60,220 65,240" stroke="url(#bgRed)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Center Heart Jewel of Wisdom -->
+  <polygon points="150,175 168,195 150,215 132,195" fill="url(#bgRed)" stroke="#fde047" stroke-width="2"/>
+  <circle cx="150" cy="195" r="4" fill="#ffffff"/>
+
+  <!-- Tier 3 Branches (Lower) -->
+  <path d="M150,270 C195,245 250,260 255,295 C260,325 230,335 215,320 C200,305 215,285 230,290" 
+        stroke="url(#bgGold)" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M150,270 C105,245 50,260 45,295 C40,325 70,335 85,320 C100,305 85,285 70,290" 
+        stroke="url(#bgGold)" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="245" cy="285" r="5" fill="#14b8a6"/>
+  <circle cx="55" cy="285" r="5" fill="#14b8a6"/>
+
+  <!-- Tier 4 Roots & Base (Akar Menyebar Teguh) -->
+  <path d="M150,360 C185,370 230,365 245,395 C250,405 235,415 220,410 C210,405 215,390 225,395" 
+        stroke="url(#bgTosca)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M150,360 C115,370 70,365 55,395 C50,405 65,415 80,410 C90,405 85,390 75,395" 
+        stroke="url(#bgTosca)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Base Urn / Foundation (Balanga Sakral) -->
+  <path d="M130,400 L170,400 L180,425 L120,425 Z" fill="url(#bgRed)" stroke="#f59e0b" stroke-width="2"/>
+  <circle cx="150" cy="412" r="4" fill="#fde047"/>
+</svg>

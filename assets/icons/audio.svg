@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="24" fill="#dc2626"/>
+  <!-- Speaker cabinet -->
+  <rect x="36" y="24" width="56" height="80" rx="8" fill="#18181b" stroke="#fde047" stroke-width="2"/>
+  <!-- Tweeter -->
+  <circle cx="64" cy="46" r="10" fill="#3f3f46" stroke="#2dd4bf" stroke-width="2"/>
+  <circle cx="64" cy="46" r="4" fill="#f59e0b"/>
+  <!-- Woofer -->
+  <circle cx="64" cy="78" r="18" fill="#27272a" stroke="#2dd4bf" stroke-width="2"/>
+  <circle cx="64" cy="78" r="8" fill="#f59e0b"/>
+  <!-- Sound waves -->
+  <path d="M100 48c6 10 6 22 0 32" stroke="#fde047" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M108 38c12 16 12 36 0 52" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M28 48c-6 10-6 22 0 32" stroke="#fde047" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M20 38c-12 16-12 36 0 52" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

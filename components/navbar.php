@@ -65,6 +65,9 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#contact">Kontak</a>
         </li>
         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">

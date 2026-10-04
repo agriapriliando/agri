@@ -43,6 +43,7 @@
           <li><a href="#portfolio" class="footer-link"><i class="bi bi-chevron-right text-tosca me-1" style="font-size: 0.7rem;"></i> Portofolio & jemaatku</a></li>
           <li><a href="#services" class="footer-link"><i class="bi bi-chevron-right text-tosca me-1" style="font-size: 0.7rem;"></i> Layanan Website</a></li>
           <li><a href="#audio-service" class="footer-link"><i class="bi bi-chevron-right text-tosca me-1" style="font-size: 0.7rem;"></i> Jasa Sound & Pianis</a></li>
+          <li><a href="#faq" class="footer-link"><i class="bi bi-chevron-right text-tosca me-1" style="font-size: 0.7rem;"></i> Tanya Jawab (FAQ)</a></li>
           <li><a href="#contact" class="footer-link"><i class="bi bi-chevron-right text-tosca me-1" style="font-size: 0.7rem;"></i> Kontak Langsung</a></li>
         </ul>
       </div>
@@ -96,7 +97,7 @@
         <span class="text-light-silver">© <?php echo date('Y'); ?> <strong class="text-white">Agri Apriliando</strong> (<a href="https://agri.my.id" class="text-kuning text-decoration-none fw-semibold">agri.my.id</a>). Seluruh hak cipta dilindungi.</span>
       </div>
       <div class="col-md-6 text-center text-md-end">
-        <span class="badge py-2 px-3 rounded-pill fw-bold" style="background: rgba(20, 184, 166, 0.2); color: #5eead4; border: 1px solid rgba(94, 234, 212, 0.4);">
+        <span class="badge py-2 px-3 rounded-pill fw-bold text-wrap" style="background: rgba(20, 184, 166, 0.2); color: #5eead4; border: 1px solid rgba(94, 234, 212, 0.4); line-height: 1.5;">
           🦅 Bangga Menjadi Programmer Lokal Kalimantan Tengah
         </span>
       </div>

@@ -14,23 +14,311 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-  <title>Agri Apriliando - Programmer & Pengembang Aplikasi Website | agri.my.id</title>
-  <meta name="description" content="Portofolio resmi Agri Apriliando (agri.my.id), Programmer Lokal Kota Palangka Raya, Kalimantan Tengah. Pengembang aplikasi website sejak 2018, Founder jemaatku.com, dan inisiator gerakan 1.000 Website Kalteng.">
-  <meta name="keywords" content="Agri Apriliando, agri.my.id, Programmer Palangka Raya, Jasa Pembuatan Website Kalteng, Web Developer Kalimantan Tengah, Laravel, Livewire, jemaatku.com, Sound System Palangka Raya, Pianis Gereja">
+  <!-- Primary Meta Tags -->
+  <title>Agri Apriliando - Programmer & Jasa Pembuatan Website Palangka Raya | agri.my.id</title>
+  <meta name="title" content="Agri Apriliando - Programmer & Jasa Pembuatan Website Palangka Raya | agri.my.id">
+  <meta name="description" content="Portofolio resmi Agri Apriliando (agri.my.id), Programmer Lokal Kota Palangka Raya, Kalimantan Tengah. Melayani jasa pembuatan & pemeliharaan website profesional sejak 2018, inisiator 1.000 Website Kalteng, dan Founder jemaatku.com.">
+  <meta name="keywords" content="Agri Apriliando, agri.my.id, Programmer Palangka Raya, Jasa Pembuatan Website Palangka Raya, Web Developer Kalimantan Tengah, Jasa Website Kalteng, Pemeliharaan Website Kampus, Jasa Web Sekolah, Laravel Developer Kalteng, Founder jemaatku.com, Sewa Sound System Palangka Raya, Pianis Gereja Palangka Raya">
   <meta name="author" content="Agri Apriliando">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow">
 
-  <!-- Open Graph / Meta Sosial -->
-  <meta property="og:title" content="Agri Apriliando - Programmer & Pengembang Aplikasi Website | agri.my.id">
-  <meta property="og:description" content="Programmer Lokal Kota Palangka Raya, Kalteng. Pengalaman sejak 2018, Founder jemaatku.com, komitmen 1.000 Website Kalimantan Tengah.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://agri.my.id">
-  <meta property="og:image" content="assets/img/foto_agri_apriliando.jpg?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.jpg') ?>">
+  <!-- Local SEO Geo-Targeting (Palangka Raya, Kalimantan Tengah) -->
+  <meta name="geo.region" content="ID-KT">
+  <meta name="geo.placename" content="Palangka Raya">
+  <meta name="geo.position" content="-2.2136;113.9108">
+  <meta name="ICBM" content="-2.2136, 113.9108">
 
+  <!-- Canonical & Language Alternates -->
   <link rel="canonical" href="https://agri.my.id/">
+  <link rel="alternate" hreflang="id" href="https://agri.my.id/">
+  <link rel="alternate" hreflang="x-default" href="https://agri.my.id/">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <!-- Mobile, PWA & Browser Theme -->
+  <meta name="theme-color" content="#041a1a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Agri Apriliando">
+  <link rel="apple-touch-icon" href="assets/ornaments/talawang-shield.svg">
+  <link rel="manifest" href="site.webmanifest">
 
   <!-- Favicon Talawang Shield -->
   <link rel="icon" type="image/svg+xml" href="assets/ornaments/talawang-shield.svg">
+
+  <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+  <meta property="og:site_name" content="Agri Apriliando - Web Developer Palangka Raya">
+  <meta property="og:title" content="Agri Apriliando - Programmer & Jasa Pembuatan Website Palangka Raya | agri.my.id">
+  <meta property="og:description" content="Programmer Lokal Kota Palangka Raya, Kalteng. Melayani pembuatan & pemeliharaan website profesional sejak 2018, inisiator 1.000 Website Kalteng, dan Founder jemaatku.com.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://agri.my.id/">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:image" content="https://agri.my.id/assets/img/foto_agri_apriliando.jpg">
+  <meta property="og:image:secure_url" content="https://agri.my.id/assets/img/foto_agri_apriliando.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="800">
+  <meta property="og:image:alt" content="Foto Resmi Agri Apriliando - Programmer Palangka Raya">
+  <meta property="profile:first_name" content="Agri">
+  <meta property="profile:last_name" content="Apriliando">
+  <meta property="profile:username" content="agriapriliando">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agri Apriliando - Programmer & Jasa Pembuatan Website Palangka Raya">
+  <meta name="twitter:description" content="Programmer Lokal Kota Palangka Raya, Kalteng. Melayani pembuatan & pemeliharaan website profesional sejak 2018, Founder jemaatku.com, dan komitmen 1.000 Website Kalteng.">
+  <meta name="twitter:image" content="https://agri.my.id/assets/img/foto_agri_apriliando.jpg">
+  <meta name="twitter:image:alt" content="Agri Apriliando - Web Developer Palangka Raya">
+
+  <!-- Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://agri.my.id/#agri",
+        "name": "Agri Apriliando",
+        "givenName": "Agri",
+        "familyName": "Apriliando",
+        "jobTitle": "Fullstack Web Developer & Software Programmer",
+        "description": "Programmer lokal Kota Palangka Raya, Kalimantan Tengah. Pengembang aplikasi website sejak 2018, inisiator 1.000 Website Kalteng, dan Founder jemaatku.com.",
+        "url": "https://agri.my.id/",
+        "image": "https://agri.my.id/assets/img/foto_agri_apriliando.jpg",
+        "telephone": "+6285249441182",
+        "nationality": {
+          "@type": "Country",
+          "name": "Indonesia"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl Rawa Belut III B No 3",
+          "addressLocality": "Palangka Raya",
+          "addressRegion": "Kalimantan Tengah",
+          "postalCode": "73112",
+          "addressCountry": "ID"
+        },
+        "knowsAbout": [
+          "PHP",
+          "Laravel",
+          "MySQL",
+          "Livewire",
+          "Alpine.js",
+          "Bootstrap",
+          "Web Application Development",
+          "Website Maintenance",
+          "Database Architecture",
+          "Sound System Engineering",
+          "Piano Performance"
+        ],
+        "sameAs": [
+          "https://jemaatku.com"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://agri.my.id/#business",
+        "name": "Agri Apriliando - Jasa Pembuatan & Pemeliharaan Website Palangka Raya",
+        "url": "https://agri.my.id/",
+        "image": "https://agri.my.id/assets/img/foto_agri_apriliando.jpg",
+        "telephone": "+6285249441182",
+        "priceRange": "Rp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl Rawa Belut III B No 3",
+          "addressLocality": "Palangka Raya",
+          "addressRegion": "Kalimantan Tengah",
+          "postalCode": "73112",
+          "addressCountry": "ID"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -2.2136,
+          "longitude": 113.9108
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "21:00"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Palangka Raya"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Kalimantan Tengah"
+          },
+          {
+            "@type": "Country",
+            "name": "Indonesia"
+          }
+        ],
+        "founder": {
+          "@id": "https://agri.my.id/#agri"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Layanan Digital & Audio Agri Apriliando",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Jasa Pembuatan Website Baru (Kampus, Sekolah, Instansi, Gereja)",
+                "description": "Pembuatan website representatif, cepat, mobile-friendly, dan berkinerja tinggi dengan framework Laravel / PHP modern."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Jasa Pemeliharaan & Maintenance Website",
+                "description": "Perawatan berkala, perbaikan error, backup database terjadwal, dan update keamanan web."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Aplikasi jemaatku.com (Gratis)",
+                "description": "Platform manajemen data jemaat, jadwal liturgi, warta online, dan keuangan gereja yang disediakan 100% gratis."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Rental Sound System & Operator Audio Palangka Raya",
+                "description": "Peralatan tata suara berkualitas untuk ibadah gereja, pernikahan, seminar, dan acara kedinasan di Palangka Raya."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pelayanan Pianis Gereja",
+                "description": "Pengiring musik ibadah gerejawi, paduan suara, dan acara khusus dengan harmoni musik yang khidmat."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://agri.my.id/#website",
+        "url": "https://agri.my.id/",
+        "name": "agri.my.id",
+        "description": "Portofolio Resmi Agri Apriliando - Programmer & Web Developer Palangka Raya",
+        "publisher": {
+          "@id": "https://agri.my.id/#agri"
+        },
+        "inLanguage": "id-ID"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://agri.my.id/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Beranda",
+            "item": "https://agri.my.id/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Profil",
+            "item": "https://agri.my.id/#about"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Portofolio",
+            "item": "https://agri.my.id/#portfolio"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Layanan",
+            "item": "https://agri.my.id/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "FAQ",
+            "item": "https://agri.my.id/#faq"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Kontak",
+            "item": "https://agri.my.id/#contact"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://agri.my.id/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Siapa programmer lokal Palangka Raya yang berpengalaman untuk pembuatan website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Agri Apriliando adalah programmer lokal yang berdomisili di Kota Palangka Raya, Kalimantan Tengah dengan pengalaman sejak tahun 2018 dalam merancang, membangun, dan memelihara website resmi untuk kampus, sekolah, instansi dinas, serta gereja."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Berapa lama estimasi waktu pengerjaan website oleh Agri Apriliando?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Waktu pengerjaan berkisar antara 1 hingga 3 hari kerja untuk perbaikan/pemeliharaan web, 2 hingga 4 minggu untuk website profil standar (sekolah, instansi, gereja), dan 3 hingga 6 minggu untuk sistem informasi manajemen kustom."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apa itu program 1.000 Website untuk Kalimantan Tengah?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Program 1.000 Website Kalteng adalah komitmen dan visi pengabdian putra daerah oleh Agri Apriliando untuk mendorong transformasi digital merata di Kalimantan Tengah, mendampingi sekolah, rumah ibadah, instansi desa, dan UMKM agar memiliki website resmi yang kredibel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah aplikasi jemaatku.com benar-benar gratis untuk gereja?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya, 100% Gratis selamanya! Aplikasi jemaatku.com dibangun dan dioperasikan secara mandiri oleh Agri Apriliando sebagai inisiatif sosial dan rohani untuk membantu administrasi jemaat gereja tanpa biaya langganan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bagaimana cara konsultasi pembuatan website atau sewa sound system di Palangka Raya?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Anda dapat langsung menghubungi Agri Apriliando melalui WhatsApp di nomor resmi 085249441182 atau menggunakan formulir pesan interaktif di agri.my.id untuk konsultasi awal gratis."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <!-- Local Stylesheets - Zero CDN Dependencies -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -56,7 +344,7 @@
     <div class="glow-orb-kuning" style="bottom: 5%; right: 10%;"></div>
 
     <div class="container position-relative" style="z-index: 2;">
-      <div class="row align-items-center g-5">
+      <div class="row align-items-center g-4 g-lg-5">
         
         <!-- Left Column: Bio & Hero CTA -->
         <div class="col-lg-7 text-center text-lg-start">
@@ -100,7 +388,7 @@
 
           <!-- Call to Action Buttons Group -->
           <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start align-items-center pt-2">
-            <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri%20Apriliando,%20saya%20ingin%20konsultasi%20pembuatan/pemeliharaan%20website" target="_blank" class="btn-cta-kuning">
+            <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri%20Apriliando,%20saya%20ingin%20konsultasi%20pembuatan/pemeliharaan%20website" target="_blank" class="btn-cta-kuning pulse-action">
               <i class="bi bi-whatsapp fs-5"></i>
               <span>Konsultasi WhatsApp</span>
             </a>
@@ -128,7 +416,7 @@
 
             <!-- Profile Image Frame -->
             <div class="profile-photo-frame">
-              <img src="assets/img/foto_agri_apriliando.jpg?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.jpg') ?>" alt="Foto Agri Apriliando - Programmer Palangka Raya" class="profile-photo-img">
+              <img src="assets/img/foto_agri_apriliando.jpg?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.jpg') ?>" alt="Foto Agri Apriliando - Programmer Palangka Raya" class="profile-photo-img" width="380" height="380" fetchpriority="high">
               
               <!-- Bottom gradient caption inside photo -->
               <div class="position-absolute bottom-0 start-0 end-0 p-3 text-start" style="background: linear-gradient(to top, rgba(3, 20, 20, 0.95), transparent);">
@@ -217,14 +505,14 @@
         <!-- Batang Garing (Tree of Life) Background Watermark -->
         <img src="assets/ornaments/batang-garing.svg" alt="Batang Garing Kalimantan" class="visi-kalteng-bg-tree">
 
-        <div class="row align-items-center g-5 position-relative" style="z-index: 2;">
+        <div class="row align-items-center g-4 g-lg-5 position-relative" style="z-index: 2;">
           
           <!-- Left Column: Story, Progress, and Pillars -->
           <div class="col-lg-8">
             
             <!-- Live Pulse Badge Header -->
             <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-              <span class="badge badge-kuning px-3 py-2 fs-6 shadow-sm d-inline-flex align-items-center gap-2">
+              <span class="badge badge-kuning px-3 py-2 fs-6 text-wrap shadow-sm d-inline-flex align-items-center gap-2">
                 <span class="pulse-indicator"><span class="pulse-radar"></span></span>
                 <span>Dedikasi Putra Daerah Kalimantan Tengah</span>
               </span>
@@ -257,11 +545,11 @@
               <div class="kalteng-progress-track mb-2">
                 <div class="kalteng-progress-fill"></div>
               </div>
-              <div class="d-flex justify-content-between text-light-silver fw-semibold" style="font-size: 0.82rem;">
-                <span>🎓 Sekolah & Kampus</span>
-                <span>⛪ Rumah Ibadah & Gereja</span>
-                <span>🏛️ Instansi & Desa</span>
-                <span>💼 Komunitas & UMKM</span>
+              <div class="d-flex flex-wrap justify-content-between gap-2 text-light-silver fw-semibold" style="font-size: 0.82rem;">
+                <span class="text-nowrap">🎓 Sekolah &amp; Kampus</span>
+                <span class="text-nowrap">⛪ Rumah Ibadah &amp; Gereja</span>
+                <span class="text-nowrap">🏛️ Instansi &amp; Desa</span>
+                <span class="text-nowrap">💼 Komunitas &amp; UMKM</span>
               </div>
             </div>
 
@@ -388,13 +676,13 @@
   <section id="about" class="py-5 bg-white">
     <div class="container py-4">
       
-      <div class="row align-items-center g-5">
+      <div class="row align-items-center g-4 g-lg-5">
         
         <!-- Left: Image & Badge Showcase -->
         <div class="col-lg-5">
           <div class="position-relative">
             <div class="p-2 rounded-4" style="background: linear-gradient(135deg, var(--tosca-600), #083333); border: 2px solid var(--kuning-400);">
-              <img src="assets/img/foto_agri_apriliando.jpg?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.jpg') ?>" alt="Agri Apriliando" class="img-fluid rounded-4 shadow" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;">
+              <img src="assets/img/foto_agri_apriliando.jpg?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.jpg') ?>" alt="Agri Apriliando - Web Developer & Programmer Palangka Raya" width="450" height="450" loading="lazy" class="img-fluid rounded-4 shadow" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;">
             </div>
 
             <!-- Mini Experience Badge -->
@@ -522,7 +810,7 @@
         <!-- PHP -->
         <div class="col-6 col-md-4 col-lg-2">
           <div class="tech-tile">
-            <img src="assets/icons/php.svg" alt="PHP Language">
+            <img src="assets/icons/php.svg" alt="PHP Language" width="48" height="48" loading="lazy">
             <h6 class="fw-bold mb-1 text-dark">PHP</h6>
             <small class="text-muted">Backend Core (PHP 8+)</small>
           </div>
@@ -531,7 +819,7 @@
         <!-- MySQL -->
         <div class="col-6 col-md-4 col-lg-2">
           <div class="tech-tile">
-            <img src="assets/icons/mysql.svg" alt="MySQL Database">
+            <img src="assets/icons/mysql.svg" alt="MySQL Database" width="48" height="48" loading="lazy">
             <h6 class="fw-bold mb-1 text-dark">MySQL</h6>
             <small class="text-muted">Relational Database</small>
           </div>
@@ -540,7 +828,7 @@
         <!-- Laravel -->
         <div class="col-6 col-md-4 col-lg-2">
           <div class="tech-tile">
-            <img src="assets/icons/laravel.svg" alt="Laravel Framework">
+            <img src="assets/icons/laravel.svg" alt="Laravel Framework" width="48" height="48" loading="lazy">
             <h6 class="fw-bold mb-1 text-dark">LARAVEL</h6>
             <small class="text-muted">MVC Framework Utama</small>
           </div>
@@ -549,7 +837,7 @@
         <!-- Livewire -->
         <div class="col-6 col-md-4 col-lg-2">
           <div class="tech-tile">
-            <img src="assets/icons/livewire.svg" alt="Laravel Livewire">
+            <img src="assets/icons/livewire.svg" alt="Laravel Livewire" width="48" height="48" loading="lazy">
             <h6 class="fw-bold mb-1 text-dark">LIVEWIRE</h6>
             <small class="text-muted">Fullstack Reactive UI</small>
           </div>
@@ -558,7 +846,7 @@
         <!-- Alpine JS -->
         <div class="col-6 col-md-4 col-lg-2">
           <div class="tech-tile">
-            <img src="assets/icons/alpine.svg" alt="Alpine JS">
+            <img src="assets/icons/alpine.svg" alt="Alpine JS" width="48" height="48" loading="lazy">
             <h6 class="fw-bold mb-1 text-dark">ALPINE JS</h6>
             <small class="text-muted">Lightweight Frontend</small>
           </div>
@@ -567,7 +855,7 @@
         <!-- Bootstrap -->
         <div class="col-6 col-md-4 col-lg-2">
           <div class="tech-tile">
-            <img src="assets/icons/bootstrap.svg" alt="Bootstrap 5">
+            <img src="assets/icons/bootstrap.svg" alt="Bootstrap 5" width="48" height="48" loading="lazy">
             <h6 class="fw-bold mb-1 text-dark">BOOTSTRAP</h6>
             <small class="text-muted">Mobile-First CSS UI</small>
           </div>
@@ -917,10 +1205,10 @@
     <div class="container py-4">
       
       <div class="sound-service-box">
-        <div class="row align-items-center g-5">
+        <div class="row align-items-center g-4 g-lg-5">
           
           <div class="col-lg-7">
-            <span class="badge badge-kuning mb-3 px-3 py-2 fs-6">
+            <span class="badge badge-kuning mb-3 px-3 py-2 fs-6 text-wrap">
               <i class="bi bi-music-note-list me-1"></i> Layanan Tambahan & Hobi Profesional
             </span>
             <h2 class="display-6 fw-bold font-heading text-white mb-3">
@@ -971,7 +1259,7 @@
             </div>
 
             <!-- Mini Interactive Visualizer Indicator -->
-            <div x-cloak x-show="audioPlayer.isPlaying" x-transition class="mt-3 p-3 rounded-3 bg-dark border border-info d-flex align-items-center justify-content-between" style="display: none;">
+            <div x-cloak x-show="audioPlayer.isPlaying" x-transition class="mt-3 p-3 rounded-3 bg-dark border border-info d-flex flex-wrap align-items-center justify-content-between gap-2" style="display: none;">
               <div class="d-flex align-items-center gap-3">
                 <i class="bi bi-music-note-beamed text-kuning fs-4"></i>
                 <div>
@@ -1076,7 +1364,7 @@
                 </div>
 
                 <h5 class="fw-bold mb-3 text-dark">2. Apakah Sudah Memiliki Domain & Hosting?</h5>
-                <div class="d-flex gap-3 mb-3">
+                <div class="d-flex flex-column flex-sm-row gap-2 gap-sm-3 mb-3">
                   <label class="d-flex align-items-center gap-2 cursor-pointer">
                     <input type="radio" name="domain_status" value="sudah" x-model="estimator.hasDomainHosting">
                     <span>Sudah Memiliki Domain/Hosting</span>
@@ -1113,6 +1401,113 @@
                 </div>
               </div>
 
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dayak Pattern Divider -->
+  <div class="dayak-ribbon"></div>
+
+  <!-- =========================================================================
+       FAQ (PERTANYAAN UMUM & INFORMASI RESMI)
+       ========================================================================= -->
+  <section id="faq" class="py-5 bg-white">
+    <div class="container py-4">
+      
+      <div class="text-center mb-5">
+        <span class="section-badge mb-2">
+          <i class="bi bi-question-circle-fill"></i> Tanya Jawab &amp; Informasi
+        </span>
+        <h2 class="display-6 fw-bold font-heading mb-2">
+          Pertanyaan <span class="text-tosca">Sering Diajukan (FAQ)</span>
+        </h2>
+        <p class="text-secondary mx-auto" style="max-width: 650px;">
+          Jawaban lengkap seputar jasa pembuatan website, biaya pengerjaan, pemeliharaan sistem, aplikasi jemaatku.com, serta layanan audio di Palangka Raya.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion accordion-custom" id="faqAccordion">
+            
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                  <i class="bi bi-person-check-fill text-tosca me-2"></i> Siapa programmer lokal Palangka Raya yang berpengalaman untuk pembuatan website?
+                </button>
+              </h3>
+              <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <strong>Agri Apriliando</strong> adalah programmer lokal yang berdomisili di Kota Palangka Raya, Kalimantan Tengah. Memiliki pengalaman profesional sejak tahun <strong>2018</strong> dalam merancang, membangun, dan memelihara website resmi untuk kampus, sekolah, instansi dinas, serta gereja dengan framework modern seperti Laravel, PHP 8+, Livewire, dan MySQL.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                  <i class="bi bi-clock-history text-tosca me-2"></i> Berapa lama estimasi waktu pengerjaan website oleh Agri Apriliando?
+                </button>
+              </h3>
+              <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Estimasi pengerjaan sangat fleksibel sesuai jenis kebutuhan:
+                  <ul class="mb-0 mt-2">
+                    <li><strong>Perbaikan &amp; Pemeliharaan Web:</strong> 1 – 3 hari kerja.</li>
+                    <li><strong>Website Profil Standar (Sekolah, Instansi, Gereja):</strong> 2 – 4 minggu.</li>
+                    <li><strong>Sistem Informasi Manajemen Kustom (Database Kompleks):</strong> 3 – 6 minggu.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                  <i class="bi bi-flag-fill text-kuning me-2"></i> Apa itu program 1.000 Website untuk Kalimantan Tengah?
+                </button>
+              </h3>
+              <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Program <strong>1.000 Website Kalteng</strong> adalah komitmen dan visi pengabdian putra daerah oleh Agri Apriliando. Tujuannya adalah memastikan setiap sekolah, kampus, gereja, badan usaha, dan desa di Kalimantan Tengah dapat menikmati lompatan digital yang nyata, terjangkau, dan didampingi langsung oleh tenaga ahli lokal yang siaga tatap muka.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                  <i class="bi bi-heart-fill text-danger me-2"></i> Apakah aplikasi jemaatku.com benar-benar gratis untuk gereja?
+                </button>
+              </h3>
+              <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <strong>Ya, 100% Gratis selamanya!</strong> Aplikasi <a href="https://jemaatku.com" target="_blank" class="fw-bold text-tosca text-decoration-none">jemaatku.com</a> dibangun dan dioperasikan secara mandiri oleh Agri Apriliando sebagai inisiatif sosial dan rohani. Gereja tidak dipungut biaya langganan bulanan untuk mengelola sensus jemaat, jadwal petugas ibadah, maupun warta jemaat.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                  <i class="bi bi-whatsapp text-success me-2"></i> Bagaimana cara konsultasi pembuatan website atau sewa sound system?
+                </button>
+              </h3>
+              <div id="faqFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Anda dapat langsung menghubungi Agri Apriliando melalui WhatsApp di nomor resmi <strong><a href="https://wa.me/6285249441182" target="_blank" class="text-success text-decoration-none">085249441182</a></strong> atau menggunakan formulir pesan interaktif di agri.my.id untuk konsultasi awal gratis.
+                </div>
+              </div>
             </div>
 
           </div>
@@ -1263,6 +1658,6 @@
   <!-- Local JavaScript Files - Zero CDN Dependencies -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/alpine.min.js" defer></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=<?= filemtime(__DIR__ . '/assets/js/main.js') ?>"></script>
 </body>
 </html>

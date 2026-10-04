@@ -1,0 +1,67 @@
+buatkan halaman website personal portofolio untuk agri.my.id , warna dominan tosca tambahkan warna kuning dan merah, tambahkan asset ornamen etnik dayak kalimantan, tambahkan berbagai animasi ringan di berbagai section, tambahkan tombol CTA, kemas website secara menarik modern
+Gunakan HTML, PHP untuk Navbar dan Footer, Bootstrap, Alpine Js
+Seluruh asset tidak boleh memakai CDN, letakan di folder assets secara rapi dengan subfolder
+akses "C:\laragon\www\agri\docs\bahan.txt" sebagai bahan
+masukan foto saya "C:\laragon\www\agri\assets\foto_agri_apriliando.jpg"
+
+buatkan 1 file tempat saya meletakan daftar website yang sudah pernah dibuat
+untuk ditampilkan, tetapi sebagai alat bantu hitung seberapa banyak website yang sudah pernah dibuat
+sehingga target 1000 website tersebut bisa diukur
+
+Rencana praktis 7 hari
+
+Target: sekitar 15 pengunjung per hari selama 7 hari.
+
+    Pastikan halaman utama siap
+        Jelaskan dalam satu kalimat: agri.my.id membantu siapa dan dalam hal apa.
+        Tambahkan satu tombol utama, misalnya “Pelajari lebih lanjut”, “Hubungi kami”, atau “Lihat produk”.
+        Sertakan WhatsApp, alamat email, dan tautan media sosial.
+        Buat minimal 3 halaman atau artikel yang menjawab pertanyaan calon pengunjung.
+
+    Bagikan ke jaringan pribadi
+    Kirim pesan ini ke WhatsApp, grup komunitas, dan kontak yang relevan:
+
+        Halo, saya sedang mengembangkan agri.my.id, sebuah situs tentang [topik/layanan].
+        Saya ingin mendapatkan masukan dari 100 pengunjung pertama. Silakan kunjungi dan beri tahu bagian yang paling bermanfaat. Terima kasih.
+
+    Target awal: 30 pengunjung.
+
+    Publikasikan konten pendek
+    Buat 1 posting per hari di Facebook, Instagram, TikTok, atau LinkedIn. Gunakan pola:
+        Masalah: “Banyak orang masih kesulitan dengan …”
+        Solusi singkat: “Berikut 3 cara untuk …”
+        Ajakan: “Panduan lengkapnya ada di agri.my.id.”
+
+    Target: 25 pengunjung.
+
+    Masuk ke komunitas yang relevan
+    Bagikan jawaban yang benar-benar membantu di grup pertanian, UMKM, bisnis lokal, komunitas desa, atau forum terkait. Jangan hanya mengirim tautan. Tulis jawaban singkat terlebih dahulu, lalu arahkan ke artikel yang relevan.
+
+    Target: 20 pengunjung.
+
+    Optimalkan pencarian Google
+    Buat judul halaman berdasarkan pertanyaan nyata, contohnya:
+        “Cara Memulai Usaha Pertanian untuk Pemula”
+        “Panduan Memilih Bibit yang Baik”
+        “Cara Meningkatkan Hasil Panen dengan Biaya Terjangkau”
+
+    Gunakan kata kunci tersebut secara alami pada judul, paragraf pembuka, dan deskripsi halaman.
+
+    Target awal: 10 pengunjung.
+
+    Minta setiap pengunjung membagikan situs
+    Tambahkan kalimat di akhir artikel:
+
+        Jika panduan ini bermanfaat, bagikan kepada satu orang yang membutuhkannya.
+
+    Target: 15 pengunjung tambahan.
+
+Prioritas hari ini
+
+    Pastikan halaman utama memiliki tujuan yang jelas.
+    Buat satu artikel yang menjawab pertanyaan paling sering ditanyakan audiens.
+    Kirim situs ke 10 kontak atau komunitas yang relevan.
+    Publikasikan satu posting dengan tautan ke artikel tersebut.
+    Catat jumlah pengunjung setiap hari agar tahu sumber yang paling efektif.
+
+Jika Anda ingin, saya juga bisa membantu menulis 7 ide posting promosi untuk agri.my.id secara gratis.

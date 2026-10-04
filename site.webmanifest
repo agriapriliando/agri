@@ -1,0 +1,17 @@
+{
+  "name": "Agri Apriliando - Programmer & Web Developer Palangka Raya",
+  "short_name": "Agri Apriliando",
+  "description": "Portofolio Programmer Lokal & Jasa Pembuatan Website Kota Palangka Raya, Kalimantan Tengah",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#031414",
+  "theme_color": "#041a1a",
+  "icons": [
+    {
+      "src": "assets/ornaments/talawang-shield.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

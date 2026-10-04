@@ -86,6 +86,8 @@
 html {
   scroll-behavior: smooth;
   font-family: var(--font-main);
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -93,6 +95,9 @@ body {
   background-color: #f8fafc;
   color: #1e293b;
   overflow-x: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
   line-height: 1.6;
 }
 
@@ -177,6 +182,16 @@ body {
   color: var(--tosca-600);
   border: 1px solid rgba(20, 184, 166, 0.3);
   box-shadow: 0 2px 10px rgba(13, 148, 136, 0.1);
+  max-width: 100%;
+  white-space: normal;
+  text-align: left;
+  word-break: break-word;
+}
+
+.badge {
+  white-space: normal !important;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 .section-badge-dark {
@@ -360,11 +375,18 @@ body {
 }
 
 /* 8. HERO SECTION & PHOTO STYLING */
+section {
+  position: relative;
+  overflow-x: clip;
+  max-width: 100%;
+}
+
 .hero-wrapper {
   padding-top: 100px;
   padding-bottom: 80px;
   position: relative;
   overflow: hidden;
+  contain: paint;
 }
 
 /* Background Mandala Animation */
@@ -446,6 +468,16 @@ body {
   height: 54px;
   z-index: 10;
   pointer-events: none;
+  animation: cornerGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes cornerGlow {
+  0% {
+    filter: drop-shadow(0 0 1px rgba(245, 158, 11, 0.25));
+  }
+  100% {
+    filter: drop-shadow(0 0 7px rgba(245, 158, 11, 0.75));
+  }
 }
 
 .corner-top-left {
@@ -948,6 +980,48 @@ body {
   flex-shrink: 0;
 }
 
+/* 16.1 FAQ ACCORDION STYLING */
+.accordion-custom .accordion-item {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 16px !important;
+  margin-bottom: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease;
+}
+
+.accordion-custom .accordion-item:hover {
+  border-color: var(--tosca-400);
+}
+
+.accordion-custom .accordion-button {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #0f172a;
+  padding: 18px 20px;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+  background: var(--tosca-50);
+  color: var(--tosca-700);
+  border-bottom: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.accordion-custom .accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--tosca-400);
+}
+
+.accordion-custom .accordion-body {
+  padding: 18px 20px;
+  color: #475569;
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
 /* 17. FOOTER */
 .footer-custom {
   background: #021414;
@@ -1052,7 +1126,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* 19. LIGHTWEIGHT SCROLL ANIMATIONS */
+/* 19. LIGHTWEIGHT SCROLL & MICRO ANIMATIONS */
 .fade-in-up {
   animation: fadeInUp 0.8s ease forwards;
 }
@@ -1060,7 +1134,7 @@ body {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -1081,6 +1155,48 @@ body {
   }
 }
 
+/* Pulsing action for primary CTA */
+.pulse-action {
+  animation: ctaPulseGlow 3.5s ease-in-out infinite;
+}
+
+@keyframes ctaPulseGlow {
+  0%, 100% {
+    box-shadow: 0 8px 24px rgba(245, 158, 11, 0.35);
+  }
+  50% {
+    box-shadow: 0 10px 28px rgba(245, 158, 11, 0.65), 0 0 16px rgba(253, 224, 71, 0.4);
+    transform: translateY(-2px);
+  }
+}
+
+/* Mobile floating badge breath animation */
+@keyframes mobileBadgeFloat {
+  0%, 100% {
+    transform: translateY(0);
+    border-color: rgba(20, 184, 166, 0.4);
+  }
+  50% {
+    transform: translateY(-3px);
+    border-color: var(--kuning-400);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 12px rgba(20, 184, 166, 0.25);
+  }
+}
+
+/* Touch micro-interaction on mobile */
+@media (hover: none) and (pointer: coarse) {
+  .card-modern:active,
+  .pillar-card:active,
+  .tech-tile:active,
+  .contact-info-card:active,
+  .estimator-option-btn:active,
+  .btn-cta-kuning:active,
+  .btn-cta-primary:active {
+    transform: scale(0.978);
+    transition: transform 0.12s ease;
+  }
+}
+
 /* Responsive tweaks */
 @media (max-width: 991.98px) {
   .hero-wrapper {
@@ -1095,6 +1211,10 @@ body {
     bottom: 50px;
     right: 0px;
   }
+  .floating-badge-3 {
+    bottom: -10px;
+    left: 10px;
+  }
   .profile-photo-container {
     margin-top: 40px;
     max-width: 360px;
@@ -1104,22 +1224,78 @@ body {
   }
 }
 
+@media (max-width: 767.98px) {
+  .bg-mandala-spin {
+    width: 240px;
+    height: 240px;
+    top: -20px;
+    right: 20px;
+    opacity: 0.08;
+  }
+  .visi-kalteng-box {
+    padding: 32px 20px;
+    border-radius: 20px;
+  }
+  .sound-service-box {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+  .estimator-box {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .stat-number {
     font-size: 1.8rem;
   }
   .profile-photo-container {
-    max-width: 310px;
+    max-width: 290px;
   }
   .floating-badge {
     position: static;
-    margin: 8px auto;
-    width: 90%;
-    animation: none;
+    margin: 10px auto;
+    width: 100%;
+    animation: mobileBadgeFloat 4s ease-in-out infinite;
+  }
+  .floating-badge-1 {
+    animation-delay: 0s;
+  }
+  .floating-badge-2 {
+    animation-delay: 1.3s;
+  }
+  .floating-badge-3 {
+    animation-delay: 2.6s;
   }
   .btn-cta-primary,
-  .btn-cta-kuning {
+  .btn-cta-kuning,
+  .btn-cta-merah,
+  .btn-cta-outline-light {
     width: 100%;
     justify-content: center;
+    text-align: center;
+    white-space: normal;
+  }
+  .visi-kalteng-box {
+    padding: 24px 15px;
+  }
+  .sound-service-box {
+    padding: 24px 15px;
+  }
+  .estimator-box {
+    padding: 20px 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-badge,
+  .corner-ornament,
+  .bg-mandala-spin,
+  .talawang-floating-shield,
+  .talawang-aura,
+  .pulse-radar::after,
+  .pulse-action {
+    animation: none !important;
   }
 }

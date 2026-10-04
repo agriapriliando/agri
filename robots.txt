@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /docs/
 
-# Sitemap
+# Host & Sitemap
+Host: https://agri.my.id
 Sitemap: https://agri.my.id/sitemap.xml

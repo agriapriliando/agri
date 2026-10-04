@@ -320,6 +320,10 @@
   }
   </script>
 
+  <!-- Preload Critical Web Fonts -->
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-700.woff2" as="font" type="font/woff2" crossorigin>
+
   <!-- Local Stylesheets - Zero CDN Dependencies -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
@@ -416,7 +420,10 @@
 
             <!-- Profile Image Frame -->
             <div class="profile-photo-frame">
-              <img src="assets/img/foto_agri_apriliando.jpg?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.jpg') ?>" alt="Foto Agri Apriliando - Programmer Palangka Raya" class="profile-photo-img" width="380" height="380" fetchpriority="high">
+              <picture class="d-block w-100">
+                <source srcset="assets/img/foto_agri_apriliando.webp?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.webp') ?>" type="image/webp">
+                <img src="assets/img/foto_agri_apriliando.jpg?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.jpg') ?>" alt="Foto Agri Apriliando - Programmer Palangka Raya" class="profile-photo-img" width="380" height="380" fetchpriority="high">
+              </picture>
               
               <!-- Bottom gradient caption inside photo -->
               <div class="position-absolute bottom-0 start-0 end-0 p-3 text-start" style="background: linear-gradient(to top, rgba(3, 20, 20, 0.95), transparent);">
@@ -682,7 +689,10 @@
         <div class="col-lg-5">
           <div class="position-relative">
             <div class="p-2 rounded-4" style="background: linear-gradient(135deg, var(--tosca-600), #083333); border: 2px solid var(--kuning-400);">
-              <img src="assets/img/foto_agri_apriliando.jpg?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.jpg') ?>" alt="Agri Apriliando - Web Developer & Programmer Palangka Raya" width="450" height="450" loading="lazy" class="img-fluid rounded-4 shadow" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;">
+              <picture class="d-block w-100">
+                <source srcset="assets/img/foto_agri_apriliando.webp?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.webp') ?>" type="image/webp">
+                <img src="assets/img/foto_agri_apriliando.jpg?v=<?= filemtime(__DIR__ . '/assets/img/foto_agri_apriliando.jpg') ?>" alt="Agri Apriliando - Web Developer & Programmer Palangka Raya" width="450" height="450" loading="lazy" class="img-fluid rounded-4 shadow" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center;">
+              </picture>
             </div>
 
             <!-- Mini Experience Badge -->
@@ -1656,8 +1666,8 @@
   <?php include __DIR__ . '/components/footer.php'; ?>
 
   <!-- Local JavaScript Files - Zero CDN Dependencies -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js" defer></script>
   <script src="assets/js/alpine.min.js" defer></script>
-  <script src="assets/js/main.js?v=<?= filemtime(__DIR__ . '/assets/js/main.js') ?>"></script>
+  <script src="assets/js/main.js?v=<?= filemtime(__DIR__ . '/assets/js/main.js') ?>" defer></script>
 </body>
 </html>

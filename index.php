@@ -392,7 +392,7 @@
 
           <!-- Call to Action Buttons Group -->
           <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start align-items-center pt-2">
-            <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri%20Apriliando,%20saya%20ingin%20konsultasi%20pembuatan/pemeliharaan%20website" target="_blank" class="btn-cta-kuning pulse-action">
+            <a href="https://wa.me/6285249441182?text=Halo%20Agri%20Apriliando,%20saya%20ingin%20konsultasi%20pembuatan/pemeliharaan%20website" target="_blank" class="btn-cta-kuning pulse-action">
               <i class="bi bi-whatsapp fs-5"></i>
               <span>Konsultasi WhatsApp</span>
             </a>
@@ -609,11 +609,11 @@
 
             <!-- Action CTA Buttons Group -->
             <div class="d-flex flex-wrap gap-3 align-items-center pt-1">
-              <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri,%20saya%20tertarik%20dengan%20Gerakan%201.000%20Website%20Kalteng%20untuk%20lembaga%20kami" target="_blank" class="btn-cta-kuning">
+              <a href="https://wa.me/6285249441182?text=Halo%20Agri,%20saya%20tertarik%20dengan%20Gerakan%201.000%20Website%20Kalteng%20untuk%20lembaga%20kami" target="_blank" class="btn-cta-kuning">
                 <i class="bi bi-chat-heart-fill fs-5"></i>
                 <span>Ajukan Website Lembaga Anda</span>
               </a>
-              <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri,%20saya%20ingin%20konsultasi%20program%201000%20website%20Kalteng" target="_blank" class="btn-cta-primary">
+              <a href="https://wa.me/6285249441182?text=Halo%20Agri,%20saya%20ingin%20konsultasi%20program%201000%20website%20Kalteng" target="_blank" class="btn-cta-primary">
                 <i class="bi bi-whatsapp fs-5"></i>
                 <span>Konsultasi WhatsApp</span>
               </a>
@@ -773,7 +773,7 @@
 
           <!-- CTA to Contact -->
           <div class="d-flex flex-wrap gap-3">
-            <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri,%20saya%20ingin%20berkonsultasi%20terkait%20kebutuhan%20website" target="_blank" class="btn-cta-primary">
+            <a href="https://wa.me/6285249441182?text=Halo%20Agri,%20saya%20ingin%20berkonsultasi%20terkait%20kebutuhan%20website" target="_blank" class="btn-cta-primary">
               <i class="bi bi-whatsapp"></i> Hubungi Agri Sekarang
             </a>
             <button type="button" @click="copyToClipboard('085249441182', 'Nomor WhatsApp Agri')" class="btn btn-outline-secondary rounded-pill px-3">
@@ -991,7 +991,7 @@
                 <i class="bi bi-box-arrow-up-right"></i>
                 <span>Kunjungi jemaatku.com</span>
               </a>
-              <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri,%20gereja%20kami%20tertarik%20menggunakan%20aplikasi%20jemaatku.com" target="_blank" class="btn btn-outline-success rounded-pill px-4 fw-bold">
+              <a href="https://wa.me/6285249441182?text=Halo%20Agri,%20gereja%20kami%20tertarik%20menggunakan%20aplikasi%20jemaatku.com" target="_blank" class="btn btn-outline-success rounded-pill px-4 fw-bold">
                 <i class="bi bi-whatsapp me-1"></i> Hubungi untuk Panduan Gereja
               </a>
             </div>
@@ -1148,7 +1148,7 @@
               <li class="mb-2"><i class="bi bi-check2 text-tosca me-1"></i> Domain & SSL HTTPS Terpasang</li>
               <li class="mb-2"><i class="bi bi-check2 text-tosca me-1"></i> Pelatihan Operator / Admin</li>
             </ul>
-            <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri,%20saya%20tertarik%20konsultasi%20layanan%20Pembuatan%20Website%20Baru" target="_blank" class="btn btn-outline-teal w-100 fw-bold rounded-pill text-tosca border-2" style="border-color: var(--tosca-500);">
+            <a href="https://wa.me/6285249441182?text=Halo%20Agri,%20saya%20tertarik%20konsultasi%20layanan%20Pembuatan%20Website%20Baru" target="_blank" class="btn btn-outline-teal w-100 fw-bold rounded-pill text-tosca border-2" style="border-color: var(--tosca-500);">
               <i class="bi bi-chat-dots me-1"></i> Konsultasi Pembuatan
             </a>
           </div>
@@ -1171,7 +1171,7 @@
               <li class="mb-2"><i class="bi bi-check2 text-merah me-1"></i> Pembaruan PHP & Patch Keamanan</li>
               <li class="mb-2"><i class="bi bi-check2 text-merah me-1"></i> Pendampingan Siap Siaga (On-Call)</li>
             </ul>
-            <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri,%20saya%20butuh%20bantuan%20layanan%20Pemeliharaan%20/%20Perbaikan%20Website" target="_blank" class="btn btn-outline-danger w-100 fw-bold rounded-pill border-2">
+            <a href="https://wa.me/6285249441182?text=Halo%20Agri,%20saya%20butuh%20bantuan%20layanan%20Pemeliharaan%20/%20Perbaikan%20Website" target="_blank" class="btn btn-outline-danger w-100 fw-bold rounded-pill border-2">
               <i class="bi bi-wrench me-1"></i> Ajukan Pemeliharaan
             </a>
           </div>
@@ -1194,7 +1194,7 @@
               <li class="mb-2"><i class="bi bi-check2 text-kuning me-1"></i> Portal Layanan Publik Mandiri</li>
               <li class="mb-2"><i class="bi bi-check2 text-kuning me-1"></i> Integrasi Laporan Transparan</li>
             </ul>
-            <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri,%20saya%20ingin%20konsultasi%20Sistem%20Informasi%20Kustom" target="_blank" class="btn btn-outline-warning w-100 fw-bold rounded-pill text-dark border-2">
+            <a href="https://wa.me/6285249441182?text=Halo%20Agri,%20saya%20ingin%20konsultasi%20Sistem%20Informasi%20Kustom" target="_blank" class="btn btn-outline-warning w-100 fw-bold rounded-pill text-dark border-2">
               <i class="bi bi-gear-fill me-1"></i> Diskusikan Sistem Kustom
             </a>
           </div>
@@ -1258,7 +1258,7 @@
 
             <!-- CTA for Sound & Pianist -->
             <div class="d-flex flex-wrap gap-3">
-              <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri,%20saya%20ingin%20sewa%20jasa%20Sound%20System%20/%20Pianis%20untuk%20acara/ibadah" target="_blank" class="btn-cta-kuning">
+              <a href="https://wa.me/6285249441182?text=Halo%20Agri,%20saya%20ingin%20sewa%20jasa%20Sound%20System%20/%20Pianis%20untuk%20acara/ibadah" target="_blank" class="btn-cta-kuning">
                 <i class="bi bi-calendar-event-fill fs-5"></i>
                 <span>Booking Jadwal Sound / Pianis</span>
               </a>

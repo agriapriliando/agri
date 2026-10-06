@@ -15,7 +15,7 @@
     <div class="d-flex align-items-center gap-3">
       <span><i class="bi bi-clock-history text-tosca-light me-1"></i> Pengalaman Sejak <strong>2018</strong></span>
       <span class="text-secondary">|</span>
-      <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri%20Apriliando,%20saya%20ingin%20berkonsultasi" target="_blank" class="fw-bold">
+      <a href="https://wa.me/6285249441182?text=Halo%20Agri%20Apriliando,%20saya%20ingin%20berkonsultasi" target="_blank" class="fw-bold">
         <i class="bi bi-whatsapp text-success me-1"></i> 085249441182
       </a>
     </div>
@@ -71,7 +71,7 @@
           <a class="nav-link" href="#contact">Kontak</a>
         </li>
         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-          <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri%20Apriliando,%20saya%20ingin%20konsultasi%20pembuatan/pemeliharaan%20website" target="_blank" class="btn-cta-kuning py-2 px-3 fs-6">
+          <a href="https://wa.me/6285249441182?text=Halo%20Agri%20Apriliando,%20saya%20ingin%20konsultasi%20pembuatan/pemeliharaan%20website" target="_blank" class="btn-cta-kuning py-2 px-3 fs-6">
             <i class="bi bi-whatsapp"></i>
             <span>Konsultasi Gratis</span>
           </a>

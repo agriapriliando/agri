@@ -82,7 +82,7 @@
           <div class="fw-bold text-white mb-1"><i class="bi bi-globe2 me-2" style="color: #5eead4;"></i>Domain Resmi:</div>
           <div><a href="https://agri.my.id" class="text-white text-decoration-none fw-semibold">https://agri.my.id</a></div>
         </div>
-        <a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri%20Apriliando,%20saya%20ingin%20berdiskusi" target="_blank" class="btn btn-sm btn-outline-warning w-100 fw-bold rounded-pill py-2">
+        <a href="https://wa.me/6285249441182?text=Halo%20Agri%20Apriliando,%20saya%20ingin%20berdiskusi" target="_blank" class="btn btn-sm btn-outline-warning w-100 fw-bold rounded-pill py-2">
           <i class="bi bi-chat-dots-fill me-1"></i> Chat WhatsApp Sekarang
         </a>
       </div>
@@ -106,7 +106,7 @@
 </footer>
 
 <!-- Floating WhatsApp CTA Button -->
-<a href="https://wa.me/6285249441182?text=Halo%20Mas%20Agri%20Apriliando,%20saya%20tertarik%20untuk%20konsultasi%20layanan%20Anda" target="_blank" class="floating-wa-btn shadow" title="Chat WhatsApp dengan Agri Apriliando" aria-label="WhatsApp">
+<a href="https://wa.me/6285249441182?text=Halo%20Agri%20Apriliando,%20saya%20tertarik%20untuk%20konsultasi%20layanan%20Anda" target="_blank" class="floating-wa-btn shadow" title="Chat WhatsApp dengan Agri Apriliando" aria-label="WhatsApp">
   <div class="floating-wa-pulse"></div>
   <i class="bi bi-whatsapp"></i>
 </a>

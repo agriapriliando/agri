@@ -1667,7 +1667,7 @@
 
   <!-- Local JavaScript Files - Zero CDN Dependencies -->
   <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/js/alpine.min.js" defer></script>
   <script src="assets/js/main.js?v=<?= filemtime(__DIR__ . '/assets/js/main.js') ?>" defer></script>
+  <script src="assets/js/alpine.min.js" defer></script>
 </body>
 </html>

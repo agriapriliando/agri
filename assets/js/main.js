@@ -4,9 +4,9 @@
  * 100% Local assets - Zero CDN dependencies
  */
 
-document.addEventListener("alpine:init", () => {
-	// Alpine.js store for global state & interactive forms
-	Alpine.data("portfolioApp", () => ({
+// Define portfolioApp factory globally so Alpine can access it either via Alpine.data or window.portfolioApp
+function portfolioApp() {
+	return {
 		activeTab: "all",
 		copiedContact: false,
 		copiedText: "",
@@ -111,8 +111,20 @@ document.addEventListener("alpine:init", () => {
 			const url = `https://wa.me/6285249441182?text=${encodeURIComponent(msg)}`;
 			window.open(url, "_blank");
 		},
-	}));
-});
+	};
+}
+
+// Bind to window object for global fallback access
+window.portfolioApp = portfolioApp;
+
+// Register to Alpine when ready
+if (window.Alpine) {
+	window.Alpine.data("portfolioApp", portfolioApp);
+} else {
+	document.addEventListener("alpine:init", () => {
+		window.Alpine.data("portfolioApp", portfolioApp);
+	});
+}
 
 // Scroll Event Listeners (Back to Top & Scroll Spy)
 document.addEventListener("DOMContentLoaded", () => {

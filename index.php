@@ -38,6 +38,7 @@
 
   <!-- Mobile, PWA & Browser Theme -->
   <meta name="theme-color" content="#041a1a">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Agri Apriliando">
@@ -541,22 +542,61 @@
               <div class="text-end mt-2 small text-tosca-light fw-bold">— Agri Apriliando</div>
             </div>
 
-            <!-- Target Progress & Scope Bar -->
+            <!-- Target Progress & Scope Bar (Mobile Optimized) -->
             <div class="kalteng-progress-wrapper mb-4">
-              <div class="d-flex justify-content-between align-items-center mb-2">
-                <span class="small fw-bold text-white d-flex align-items-center gap-2">
-                  <i class="bi bi-flag-fill text-kuning"></i> Gerakan Transformasi Digital Kalteng
+              <!-- Top Row: Icon + Title + Target Badge -->
+              <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2 mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="kalteng-flag-icon d-flex align-items-center justify-content-center">
+                    <i class="bi bi-flag-fill text-kuning fs-6"></i>
+                  </div>
+                  <div>
+                    <div class="fw-bold text-white fs-6 lh-sm">Gerakan Transformasi Digital Kalteng</div>
+                    <small class="text-tosca-light" style="font-size: 0.74rem;">Misi Inklusif Digitalisasi Kalimantan Tengah</small>
+                  </div>
+                </div>
+                <span class="badge rounded-pill bg-warning text-dark fw-bold px-3 py-2 shadow-sm align-self-start align-self-sm-center">
+                  <i class="bi bi-bullseye me-1"></i> Target 1.000 Website
                 </span>
-                <span class="badge bg-warning text-dark fw-bold">Target 1.000 Website</span>
               </div>
-              <div class="kalteng-progress-track mb-2">
-                <div class="kalteng-progress-fill"></div>
+
+              <!-- Animated Progress Bar with Milestone Label -->
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1 text-light-silver" style="font-size: 0.78rem;">
+                  <span><i class="bi bi-broadcast text-tosca me-1"></i> Jangkauan &amp; Rencana Aksi</span>
+                  <span class="text-kuning fw-bold">Komitmen Berkelanjutan</span>
+                </div>
+                <div class="kalteng-progress-track">
+                  <div class="kalteng-progress-fill"></div>
+                </div>
               </div>
-              <div class="d-flex flex-wrap justify-content-between gap-2 text-light-silver fw-semibold" style="font-size: 0.82rem;">
-                <span class="text-nowrap">🎓 Sekolah &amp; Kampus</span>
-                <span class="text-nowrap">⛪ Rumah Ibadah &amp; Gereja</span>
-                <span class="text-nowrap">🏛️ Instansi &amp; Desa</span>
-                <span class="text-nowrap">💼 Komunitas &amp; UMKM</span>
+
+              <!-- 4 Sector Targets: Neat 2x2 Grid on Mobile, 4 Columns on Desktop -->
+              <div class="row row-cols-2 row-cols-lg-4 g-2">
+                <div class="col">
+                  <div class="kalteng-target-chip">
+                    <span class="chip-icon">🎓</span>
+                    <span class="lh-sm">Sekolah &amp; Kampus</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="kalteng-target-chip">
+                    <span class="chip-icon">⛪</span>
+                    <span class="lh-sm">Rumah Ibadah &amp; Gereja</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="kalteng-target-chip">
+                    <span class="chip-icon">🏛️</span>
+                    <span class="lh-sm">Instansi &amp; Desa</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="kalteng-target-chip">
+                    <span class="chip-icon">💼</span>
+                    <span class="lh-sm">Komunitas &amp; UMKM</span>
+                  </div>
+                </div>
               </div>
             </div>
 

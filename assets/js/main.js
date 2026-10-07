@@ -139,17 +139,24 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
-	// Floating Share Bar (WhatsApp & Salin Link)
+	// Floating Share Bar (WhatsApp, Facebook & Salin Link)
 	const shareWaBtn = document.getElementById("floatingShareWaBtn");
+	const shareFbBtn = document.getElementById("floatingShareFbBtn");
 	const copyBtn = document.getElementById("floatingCopyLinkBtn");
 	const copyText = document.getElementById("floatingCopyText");
+	const copyTextMobile = document.getElementById("floatingCopyTextMobile");
 	const copyIcon = document.getElementById("floatingCopyIcon");
 	const shareToast = document.getElementById("floatingShareToast");
 
+	const currentUrl = window.location.href || "https://agri.my.id/";
+
 	if (shareWaBtn) {
-		const currentUrl = window.location.href || "https://agri.my.id/";
 		const shareText = `Lihat portofolio & layanan website Agri Apriliando - Programmer Palangka Raya: ${currentUrl}`;
 		shareWaBtn.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+	}
+
+	if (shareFbBtn) {
+		shareFbBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
 	}
 
 	if (copyBtn) {
@@ -176,6 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			copyBtn.classList.add("copied");
 			if (copyIcon) copyIcon.className = "bi bi-check2";
 			if (copyText) copyText.textContent = "Disalin!";
+			if (copyTextMobile) copyTextMobile.textContent = "Disalin!";
 			if (shareToast) shareToast.classList.add("show");
 
 			if (copyTimeout) clearTimeout(copyTimeout);
@@ -183,6 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				copyBtn.classList.remove("copied");
 				if (copyIcon) copyIcon.className = "bi bi-link-45deg";
 				if (copyText) copyText.textContent = "Salin Link";
+				if (copyTextMobile) copyTextMobile.textContent = "Salin";
 				if (shareToast) shareToast.classList.remove("show");
 			}, 2500);
 		}

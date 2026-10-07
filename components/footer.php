@@ -122,7 +122,23 @@
        title="Bagikan ke WhatsApp"
        aria-label="Bagikan ke WhatsApp">
       <i class="bi bi-whatsapp"></i>
-      <span class="share-text">WhatsApp</span>
+      <span class="share-text d-none d-sm-inline">WhatsApp</span>
+      <span class="share-text d-inline d-sm-none">WA</span>
+    </a>
+
+    <div class="floating-share-divider" aria-hidden="true"></div>
+
+    <!-- Tombol Share Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fagri.my.id%2F" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       id="floatingShareFbBtn" 
+       class="floating-share-btn share-fb" 
+       title="Bagikan ke Facebook"
+       aria-label="Bagikan ke Facebook">
+      <i class="bi bi-facebook"></i>
+      <span class="share-text d-none d-sm-inline">Facebook</span>
+      <span class="share-text d-inline d-sm-none">FB</span>
     </a>
 
     <div class="floating-share-divider" aria-hidden="true"></div>
@@ -134,7 +150,8 @@
             title="Salin Link Website"
             aria-label="Salin Link Website">
       <i class="bi bi-link-45deg" id="floatingCopyIcon"></i>
-      <span id="floatingCopyText" class="share-text">Salin Link</span>
+      <span id="floatingCopyText" class="share-text d-none d-sm-inline">Salin Link</span>
+      <span id="floatingCopyTextMobile" class="share-text d-inline d-sm-none">Salin</span>
     </button>
   </div>
 </div>

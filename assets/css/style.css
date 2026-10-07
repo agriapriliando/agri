@@ -1255,6 +1255,26 @@ section {
   transform: scale(1.15);
 }
 
+/* Facebook share button */
+.floating-share-btn.share-fb {
+  color: #e6f0fc;
+}
+
+.floating-share-btn.share-fb i {
+  color: #1877f2;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.floating-share-btn.share-fb:hover {
+  background: rgba(24, 119, 242, 0.2);
+  color: #ffffff;
+}
+
+.floating-share-btn.share-fb:hover i {
+  transform: scale(1.15);
+}
+
 /* Divider */
 .floating-share-divider {
   width: 1px;

@@ -19,47 +19,6 @@ function portfolioApp() {
 			notes: "",
 		},
 
-		// Project Estimator state
-		estimator: {
-			category: "sekolah_kampus",
-			urgency: "standar",
-			hasDomainHosting: "belum",
-			getEstimatedTimeline() {
-				if (this.category === "pemeliharaan") return "1 - 3 Hari Kerja";
-				if (this.category === "sound_pianis")
-					return "Sesuai Jadwal Ibadah / Acara";
-				if (this.category === "sistem_kustom") return "3 - 6 Minggu";
-				return "2 - 4 Minggu";
-			},
-			getRecommendation() {
-				switch (this.category) {
-					case "sekolah_kampus":
-						return "Website Profil Modern + Modul PPDB + Portal Informasi Terintegrasi";
-					case "instansi":
-						return "Portal Resmi Instansi + Publikasi Berita + Keamanan Tingkat Lanjut";
-					case "gereja_sosial":
-						return "Aplikasi Pelayanan Jemaat (Integrasi jemaatku.com) + Warta Digital & Transparansi";
-					case "sistem_kustom":
-						return "Sistem Informasi Berbasis Laravel & Livewire sesuai kebutuhan spesifik";
-					case "pemeliharaan":
-						return "Audit Keamanan, Optimasi Kecepatan, Backup & Maintenance Berkala";
-					case "sound_pianis":
-						return "Rental Sound System Profesional & Pelayanan Pianis Berpengalaman";
-					default:
-						return "Konsultasi Kustom dengan Agri Apriliando";
-				}
-			},
-			getWaLink() {
-				const text =
-					`Halo Agri Apriliando (agri.my.id),\nSaya ingin konsultasi estimasi proyek:\n` +
-					`• Layanan: ${this.getRecommendation()}\n` +
-					`• Estimasi Waktu: ${this.getEstimatedTimeline()}\n` +
-					`• Kesiapan Domain/Hosting: ${this.hasDomainHosting === "sudah" ? "Sudah ada" : "Belum ada (butuh panduan)"}\n\n` +
-					`Bisa diskusikan lebih lanjut Mas? Terima kasih.`;
-				return `https://wa.me/6285249441182?text=${encodeURIComponent(text)}`;
-			},
-		},
-
 		// Copy to clipboard helper
 		copyToClipboard(text, label) {
 			if (navigator.clipboard) {

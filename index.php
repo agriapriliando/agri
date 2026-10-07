@@ -1255,9 +1255,9 @@
     <div class="container py-4">
       
       <div class="sound-service-box">
-        <div class="row align-items-center g-4 g-lg-5">
+        <div class="row g-4">
           
-          <div class="col-lg-7">
+          <div class="col-12">
             <span class="badge badge-kuning mb-3 px-3 py-2 fs-6 text-wrap">
               <i class="bi bi-music-note-list me-1"></i> Layanan Tambahan & Hobi Profesional
             </span>
@@ -1302,40 +1302,8 @@
                 <i class="bi bi-calendar-event-fill fs-5"></i>
                 <span>Booking Jadwal Sound / Pianis</span>
               </a>
-              <button type="button" @click="audioPlayer.togglePlay()" class="btn btn-outline-info rounded-pill px-4 fw-bold d-flex align-items-center gap-2">
-                <i class="bi" :class="audioPlayer.isPlaying ? 'bi-stop-fill text-danger' : 'bi-play-fill text-warning'"></i>
-                <span x-text="audioPlayer.isPlaying ? 'Jeda Simulasi Harmoni' : 'Simulasi Audio Palangka Raya'"></span>
-              </button>
             </div>
 
-            <!-- Mini Interactive Visualizer Indicator -->
-            <div x-cloak x-show="audioPlayer.isPlaying" x-transition class="mt-3 p-3 rounded-3 bg-dark border border-info d-flex flex-wrap align-items-center justify-content-between gap-2" style="display: none;">
-              <div class="d-flex align-items-center gap-3">
-                <i class="bi bi-music-note-beamed text-kuning fs-4"></i>
-                <div>
-                  <div class="text-white fw-bold fs-6">Harmoni Piano & Sound Palangka Raya</div>
-                  <div class="text-light-silver small" style="font-size: 0.85rem;">Siap mengiringi momen ibadah & acara istimewa Anda</div>
-                </div>
-              </div>
-              <span class="badge bg-success px-3 py-2 fw-bold">Harmoni Aktif</span>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 text-center">
-            <div class="p-4 rounded-4" style="background: rgba(3, 26, 26, 0.95); border: 2px solid var(--kuning-400); box-shadow: 0 15px 40px rgba(0,0,0,0.6);">
-              <img src="assets/icons/piano.svg" alt="Pianis Palangka Raya" width="80" height="80" class="mb-3">
-              <h4 class="text-white fw-bold mb-1">Pianis Aktif Gereja</h4>
-              <div class="fw-bold mb-3" style="color: #5eead4; font-size: 0.92rem;">
-                <i class="bi bi-geo-alt-fill text-merah me-1"></i> Kota Palangka Raya, Kalimantan Tengah
-              </div>
-              <p class="text-light-silver mb-3 fs-6 fst-italic" style="line-height: 1.6;">
-                "Musik dan coding adalah perpaduan logika dan rasa. Melalui alunan piano di rumah ibadah dan baris-baris kode di laptop, saya mendedikasikan talenta untuk melayani sesama."
-              </p>
-              <div class="p-2 rounded bg-black bg-opacity-60 text-kuning small fw-bold">
-                <i class="bi bi-check-circle-fill text-success me-1"></i> Melayani Berbagai Gereja di Palangka Raya
-              </div>
-            </div>
           </div>
 
         </div>

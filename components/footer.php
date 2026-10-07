@@ -105,6 +105,40 @@
   </div>
 </footer>
 
+<!-- Floating Share Bar (Bottom Center) -->
+<div id="floatingShareBar" class="floating-share-container" role="region" aria-label="Bagikan Halaman">
+  <!-- Toast Popover Feedback saat Salin Link -->
+  <div id="floatingShareToast" class="floating-share-feedback" role="status" aria-live="polite">
+    <i class="bi bi-check-circle-fill text-warning me-1"></i> Link berhasil disalin!
+  </div>
+
+  <div class="floating-share-pill shadow">
+    <!-- Tombol Share WhatsApp -->
+    <a href="https://api.whatsapp.com/send?text=Lihat%20portofolio%20%26%20layanan%20website%20Agri%20Apriliando%20-%20Programmer%20Palangka%20Raya%3A%20https%3A%2F%2Fagri.my.id%2F" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       id="floatingShareWaBtn" 
+       class="floating-share-btn share-wa" 
+       title="Bagikan ke WhatsApp"
+       aria-label="Bagikan ke WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+      <span class="share-text">WhatsApp</span>
+    </a>
+
+    <div class="floating-share-divider" aria-hidden="true"></div>
+
+    <!-- Tombol Salin Link -->
+    <button type="button" 
+            id="floatingCopyLinkBtn" 
+            class="floating-share-btn share-copy" 
+            title="Salin Link Website"
+            aria-label="Salin Link Website">
+      <i class="bi bi-link-45deg" id="floatingCopyIcon"></i>
+      <span id="floatingCopyText" class="share-text">Salin Link</span>
+    </button>
+  </div>
+</div>
+
 <!-- Floating WhatsApp CTA Button -->
 <a href="https://wa.me/6285249441182?text=Halo%20Agri%20Apriliando,%20saya%20tertarik%20untuk%20konsultasi%20layanan%20Anda" target="_blank" class="floating-wa-btn shadow" title="Chat WhatsApp dengan Agri Apriliando" aria-label="WhatsApp">
   <div class="floating-wa-pulse"></div>
@@ -115,3 +149,4 @@
 <a href="#hero" id="backToTopBtn" class="back-to-top shadow" title="Kembali ke Atas" aria-label="Back to Top">
   <i class="bi bi-chevron-up"></i>
 </a>
+

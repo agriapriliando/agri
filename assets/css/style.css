@@ -86,7 +86,7 @@
 html {
   scroll-behavior: smooth;
   font-family: var(--font-main);
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 
@@ -94,7 +94,7 @@ body {
   font-family: var(--font-main);
   background-color: #f8fafc;
   color: #1e293b;
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
   max-width: 100%;
   width: 100%;
@@ -232,12 +232,21 @@ body {
 }
 
 /* 6. NAVBAR CUSTOM STYLING */
+.header-sticky-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  width: 100%;
+}
+
 .navbar-custom {
-  background: rgba(4, 26, 26, 0.92);
+  background: rgba(4, 26, 26, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(20, 184, 166, 0.25);
   transition: all 0.3s ease;
+  position: relative;
   z-index: 1030;
 }
 
@@ -1173,6 +1182,143 @@ section {
   transform: translateY(-3px);
 }
 
+/* 18.1 FLOATING SHARE BAR (BOTTOM CENTER) */
+.floating-share-container {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1040;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  transition: bottom 0.3s ease;
+}
+
+.floating-share-pill {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(4, 26, 26, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(20, 184, 166, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(20, 184, 166, 0.15);
+  border-radius: 50px;
+  padding: 6px 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.floating-share-pill:hover {
+  border-color: var(--kuning-400);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(20, 184, 166, 0.25);
+  transform: translateY(-2px);
+}
+
+.floating-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* WhatsApp share button */
+.floating-share-btn.share-wa {
+  color: #e6fcf5;
+}
+
+.floating-share-btn.share-wa i {
+  color: #25d366;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.floating-share-btn.share-wa:hover {
+  background: rgba(37, 211, 102, 0.18);
+  color: #ffffff;
+}
+
+.floating-share-btn.share-wa:hover i {
+  transform: scale(1.15);
+}
+
+/* Divider */
+.floating-share-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(20, 184, 166, 0.35);
+  margin: 0 2px;
+}
+
+/* Salin Link button */
+.floating-share-btn.share-copy {
+  color: #e2e8f0;
+}
+
+.floating-share-btn.share-copy i {
+  color: #5eead4;
+  font-size: 1.15rem;
+  transition: transform 0.2s ease;
+}
+
+.floating-share-btn.share-copy:hover {
+  background: rgba(20, 184, 166, 0.2);
+  color: #ffffff;
+}
+
+.floating-share-btn.share-copy:hover i {
+  transform: scale(1.15);
+}
+
+.floating-share-btn.share-copy.copied {
+  background: rgba(234, 179, 8, 0.2);
+  color: #fde047;
+}
+
+.floating-share-btn.share-copy.copied i {
+  color: #fde047;
+}
+
+/* Feedback bubble (toast above the pill) */
+.floating-share-feedback {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  background: #041a1a;
+  color: #ffffff;
+  border: 1px solid rgba(234, 179, 8, 0.65);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.floating-share-feedback.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
 /* 19. LIGHTWEIGHT SCROLL & MICRO ANIMATIONS */
 .fade-in-up {
   animation: fadeInUp 0.8s ease forwards;
@@ -1246,6 +1392,24 @@ section {
 
 /* Responsive tweaks */
 @media (max-width: 991.98px) {
+  /* Mobile Navbar: Jarak daftar menu dengan header */
+  .navbar-custom .navbar-collapse {
+    margin-top: 18px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid rgba(20, 184, 166, 0.22);
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .navbar-custom .navbar-nav {
+    gap: 6px !important;
+  }
+  .navbar-custom .nav-link {
+    padding: 10px 16px !important;
+    font-size: 0.98rem;
+  }
+
   .hero-wrapper {
     padding-top: 80px;
     padding-bottom: 50px;
@@ -1332,6 +1496,34 @@ section {
   }
   .estimator-box {
     padding: 20px 14px;
+  }
+  .floating-share-container {
+    bottom: 18px;
+  }
+  .floating-share-pill {
+    padding: 4px 6px;
+    gap: 2px;
+  }
+  .floating-share-btn {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    gap: 5px;
+  }
+  .floating-share-btn i {
+    font-size: 0.95rem !important;
+  }
+  .floating-wa-btn {
+    bottom: 18px;
+    right: 14px;
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+  }
+  .back-to-top {
+    bottom: 18px;
+    left: 14px;
+    width: 38px;
+    height: 38px;
   }
 }
 

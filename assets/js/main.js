@@ -60,15 +60,6 @@ function portfolioApp() {
 			},
 		},
 
-		// Interactive Audio Simulation for Pianist / Sound System
-		audioPlayer: {
-			isPlaying: false,
-			currentTrack: "Iringan Pianis Ibadah Palangka Raya",
-			togglePlay() {
-				this.isPlaying = !this.isPlaying;
-			},
-		},
-
 		// Copy to clipboard helper
 		copyToClipboard(text, label) {
 			if (navigator.clipboard) {
@@ -186,6 +177,70 @@ document.addEventListener("DOMContentLoaded", () => {
 			const endValue = counter.getAttribute("data-target");
 			const suffix = counter.getAttribute("data-suffix") || "";
 			counter.textContent = endValue + suffix;
+		});
+	}
+
+	// Floating Share Bar (WhatsApp & Salin Link)
+	const shareWaBtn = document.getElementById("floatingShareWaBtn");
+	const copyBtn = document.getElementById("floatingCopyLinkBtn");
+	const copyText = document.getElementById("floatingCopyText");
+	const copyIcon = document.getElementById("floatingCopyIcon");
+	const shareToast = document.getElementById("floatingShareToast");
+
+	if (shareWaBtn) {
+		const currentUrl = window.location.href || "https://agri.my.id/";
+		const shareText = `Lihat portofolio & layanan website Agri Apriliando - Programmer Palangka Raya: ${currentUrl}`;
+		shareWaBtn.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+	}
+
+	if (copyBtn) {
+		let copyTimeout = null;
+
+		function fallbackCopy(text, callback) {
+			try {
+				const el = document.createElement("textarea");
+				el.value = text;
+				el.setAttribute("readonly", "");
+				el.style.position = "absolute";
+				el.style.left = "-9999px";
+				document.body.appendChild(el);
+				el.select();
+				document.execCommand("copy");
+				document.body.removeChild(el);
+				if (typeof callback === "function") callback();
+			} catch (err) {
+				console.error("Gagal menyalin link:", err);
+			}
+		}
+
+		function onCopySuccess() {
+			copyBtn.classList.add("copied");
+			if (copyIcon) copyIcon.className = "bi bi-check2";
+			if (copyText) copyText.textContent = "Disalin!";
+			if (shareToast) shareToast.classList.add("show");
+
+			if (copyTimeout) clearTimeout(copyTimeout);
+			copyTimeout = setTimeout(() => {
+				copyBtn.classList.remove("copied");
+				if (copyIcon) copyIcon.className = "bi bi-link-45deg";
+				if (copyText) copyText.textContent = "Salin Link";
+				if (shareToast) shareToast.classList.remove("show");
+			}, 2500);
+		}
+
+		copyBtn.addEventListener("click", () => {
+			const urlToCopy = window.location.href || "https://agri.my.id/";
+
+			if (navigator.clipboard && window.isSecureContext) {
+				navigator.clipboard
+					.writeText(urlToCopy)
+					.then(onCopySuccess)
+					.catch(() => {
+						fallbackCopy(urlToCopy, onCopySuccess);
+					});
+			} else {
+				fallbackCopy(urlToCopy, onCopySuccess);
+			}
 		});
 	}
 });
